@@ -19,7 +19,7 @@ unimail-client 的 spring boot 官方依赖
 <dependency>
     <groupId>space.i-curve</groupId>
     <artifactId>spring-boot-starter-unimail</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 
