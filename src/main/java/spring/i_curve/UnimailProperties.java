@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class UnimailProperties {
     private String host;
     private String key;
-    private String lang = "";
+    private String lang;
 
     public String getHost() {
         return this.host;
