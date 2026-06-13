@@ -1,12 +1,14 @@
 # unimail-java-starter
 
+> 当前分支sdk的版本是v1, 此分支不再进行功能更新, 如果新用户请参考主分支master
+
 unimail-client 的 spring boot 官方依赖
 
 <!-- TOC -->
 
-* [unimail-java-starter](#unimail-java-starter)
-    * [用法](#用法)
-    * [LICENSE](#license)
+- [unimail-java-starter](#unimail-java-starter)
+  - [用法](#用法)
+  - [LICENSE](#license)
 
 <!-- TOC -->
 
