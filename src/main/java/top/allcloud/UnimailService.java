@@ -1,6 +1,5 @@
-package spring.i_curve;
+package top.allcloud;
 
-import space.i_curve.UnimailClient;
 
 public class UnimailService extends UnimailClient {
     public UnimailService(String key) {

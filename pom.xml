@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>space.i-curve</groupId>
+    <groupId>top.allcloud</groupId>
     <artifactId>spring-boot-starter-unimail</artifactId>
-    <version>0.0.3</version>
+    <version>1.0.0</version>
 
     <name>spring-boot-starter-unimail</name>
     <description>spring boot package for unimail client</description>
@@ -21,9 +21,9 @@
 
     <developers>
         <developer>
-            <id>i-curve</id>
-            <name>i-curve</name>
-            <email>i-curve@qq.com</email>
+            <id>allcloud.top</id>
+            <name>allcloud.top</name>
+            <email>admin@allcloud.top</email>
             <roles>
                 <role>Project Manager</role>
                 <role>Architect</role>
@@ -42,45 +42,35 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring-boot.version>2.7.0</spring-boot.version>
+        <spring-boot.compile.version>2.7.18</spring-boot.compile.version>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
         <dependency>
-            <groupId>space.i-curve</groupId>
-            <artifactId>unimail-client</artifactId>
-            <version>0.3.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
+            <groupId>top.allcloud</groupId>
+            <artifactId>unimail-java-sdk</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <!-- 自动配置支持 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring-boot.compile.version}</version>
+            <scope>provided</scope>
+            <optional>true</optional>
         </dependency>
 
         <!-- 配置属性处理器（编译期生成 metadata，方便 IDE 提示） -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot.compile.version}</version>
+            <scope>provided</scope>
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>

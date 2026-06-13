@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-spring.i_curve.UnimailAutoConfiguration
+top.allcloud.UnimailAutoConfiguration
